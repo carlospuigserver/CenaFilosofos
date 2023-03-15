@@ -48,3 +48,12 @@ class Filosofo:
        self.estado_label.config(text=f"{self.nombre} : {self.estado}")
        self.comidas+=1
        self.comidas_label.config(text=f"Comidas: {self.comidas}")
+
+    def ciclo_vida(self):
+       while True:
+          self.pensar()
+          self.comer()
+          self.estado = f"{self.comidas} Comidas"
+          self.estado_label.config(text=f"{self.nombre} : {self.estado}")
+
+    
