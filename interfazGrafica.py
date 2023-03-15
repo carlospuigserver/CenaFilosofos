@@ -22,3 +22,10 @@ def pensar(self):
     self.estado="Pensando"
     self.estado_label.config(text=f"{self.nombre} : {self.estado}")
     time.sleep(random.uniform(1,5))
+
+
+def intentar_obtener_palillo(self,palillo):
+    palillo.acquire()
+    self.estado= f"Obtuvo {palillo}"
+    self.estado_label.config(text=f"{self.nombre} : {self.estado}")
+
