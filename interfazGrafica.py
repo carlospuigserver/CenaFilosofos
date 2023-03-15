@@ -57,7 +57,7 @@ class Filosofo:
           self.estado_label.config(text=f"{self.nombre} : {self.estado}")
 
 class CenaFilosofos:
-   def __init__(self):
+    def __init__(self):
       self.raiz=tk.Tk()
       self.raiz.geometry("800x600")
       self.raiz.title("Cena de los Filósofos")
@@ -80,3 +80,7 @@ class CenaFilosofos:
          filosofo.estado=f"{comidas} comidas"
          filosofo.estado_label.config(text=f"{filosofo.nombre} : {filosofo.estado}")
 
+
+
+if __name__=="__main__":
+   CenaFilosofos()
