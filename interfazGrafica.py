@@ -39,3 +39,12 @@ class Filosofo:
        self.estado= "Comiendo"
        self.estado_label.config(text=f"{self.nombre} : {self.estado}")
 
+    def comer(self):
+       self.obtener_palillos()
+       time.sleep(random.uniform(1,5))
+       self.palillo_izquierdo.release()
+       self.palillo_derecho.release()
+       self.estado="Terminó de comer"
+       self.estado_label.config(text=f"{self.nombre} : {self.estado}")
+       self.comidas+=1
+       self.comidas_label.config(text=f"Comidas: {self.comidas}")
