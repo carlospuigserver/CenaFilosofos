@@ -12,7 +12,7 @@ class Filosofo:
         self.x= x
         self.y= y
         self.estado= "Pensando"
-        self.estado_label= tk.Lable(self.interfaz,text=f"{self.nombre} : {self.estado}")
+        self.estado_label= tk.Label(self.interfaz,text=f"{self.nombre} : {self.estado}")
         self.estado_label.place(x=self.x,y=self.y)
         self.comidas=0
         self.comidas_label= tk.Label(self.interfaz, text=f"Comidas: {self.comidas}")
