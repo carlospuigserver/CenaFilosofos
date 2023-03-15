@@ -56,4 +56,16 @@ class Filosofo:
           self.estado = f"{self.comidas} Comidas"
           self.estado_label.config(text=f"{self.nombre} : {self.estado}")
 
-    
+class CenaFilosofos:
+   def __init__(self):
+      self.raiz=tk.Tk()
+      self.raiz.geometry("800x600")
+      self.raiz.title("Cena de los Filósofos")
+      self.palillos= [threading.Lock() for _ in range(5)]
+      self.filosofos=[Filosofo("Filósofo"+str(i+1),self.palillos[i],self.palillos[(i+1)%5],self.raiz, 50, 50+50*i) for i in range(5)]
+      self.etiquetas_comidas = [tk.Label(self.raiz, text=f"{f.nombre}: 0 comidas") for f in self.filosofos]
+      for i, f in enumerate(self.filosofos):
+            threading.Thread(target=self.ciclo_vida_filosofo, args=(f, self.etiquetas_comidas[i])).start()
+      for e in self.etiquetas_comidas:
+        e.pack()
+        self.raiz.mainloop()
