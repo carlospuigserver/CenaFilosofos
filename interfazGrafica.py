@@ -16,7 +16,7 @@ class Filosofo:
         self.estado_label.place(x=self.x,y=self.y)
         self.comidas=0
         self.comidas_label= tk.Label(self.interfaz, text=f"Comidas: {self.comidas}")
-        self.comidas_label.place(x=self.x+180,y=self.y)
+        self.comidas_label.place(x=self.x+580,y=self.y)
 
     def pensar(self):
       self.estado="Pensando"
