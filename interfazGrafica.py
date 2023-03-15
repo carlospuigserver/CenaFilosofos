@@ -69,3 +69,14 @@ class CenaFilosofos:
       for e in self.etiquetas_comidas:
         e.pack()
         self.raiz.mainloop()
+
+    
+    def ciclo_vida_filosofo(self,filosofo,etiqueta_comidas):
+      while True:
+         filosofo.pensar()
+         filosofo.comer()
+         comidas=filosofo.comidas
+         etiqueta_comidas.config(text=f"{filosofo.nombre}: {comidas} comidas")
+         filosofo.estado=f"{comidas} comidas"
+         filosofo.estado_label.config(text=f"{filosofo.nombre} : {filosofo.estado}")
+
