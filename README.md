@@ -99,7 +99,7 @@ if __name__=="__main__":
 
 
 
-# Código añadiendo tkinter
+# Código añadiendo tkinter y threading
 
 ```
 import threading
