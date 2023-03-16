@@ -194,3 +194,17 @@ if __name__=="__main__":
 
 Este código es una implementación del problema clásico de los filósofos, he utilizado hilos y tkinter para poder mostrar el resultado del programa en una ventana gráfica.
 Cada filósofo tiene su propia etiqueta que muestra su estado, si están pensando, comieno o intentando obtener un palillo, y también se muestra cuantas veces ha comido cada filósofo. 
+
+
+
+Los resultados al ejecutar el código son los siguientes:
+<img width="921" alt="filo2" src="https://user-images.githubusercontent.com/91721643/225739484-7ba56ebd-6b9e-41b0-b0a7-245e016351a4.png">
+
+
+<img width="943" alt="filo3" src="https://user-images.githubusercontent.com/91721643/225739508-7123bb64-f9b9-43e0-8383-2532c9674f14.png">
+
+
+
+
+De esta manera vemos que la etiqueta de estado de cada filósofo se va actualizando constantemente, a su vez que se actualiza y se almacenan las veces que ha comido cada uno.
+
