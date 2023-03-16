@@ -1,4 +1,4 @@
-# CenaFilosofos
+
 
 El link de este repositorio es el siguiente: https://github.com/carlospuigserver/CenaFilosofos.git
 
@@ -189,3 +189,8 @@ if __name__=="__main__":
    CenaFilosofos()
    
    ```
+
+
+
+Este código es una implementación del problema clásico de los filósofos, he utilizado hilos y tkinter para poder mostrar el resultado del programa en una ventana gráfica.
+Cada filósofo tiene su propia etiqueta que muestra su estado, si están pensando, comieno o intentando obtener un palillo, y también se muestra cuantas veces ha comido cada filósofo. 
