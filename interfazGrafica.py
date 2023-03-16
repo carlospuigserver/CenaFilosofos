@@ -16,7 +16,7 @@ class Filosofo:
         self.estado_label.place(x=self.x,y=self.y)
         self.comidas=0
         self.comidas_label= tk.Label(self.interfaz, text=f"Comidas: {self.comidas}")
-        self.comidas_label.place(x=self.x+580,y=self.y)
+        self.comidas_label.place(x=self.x+580, y=self.y)
 
     def pensar(self):
       self.estado="Pensando"
@@ -66,9 +66,8 @@ class CenaFilosofos:
       self.etiquetas_comidas = [tk.Label(self.raiz, text=f"{f.nombre}: 0 comidas") for f in self.filosofos]
       for i, f in enumerate(self.filosofos):
             threading.Thread(target=self.ciclo_vida_filosofo, args=(f, self.etiquetas_comidas[i])).start()
-      for e in self.etiquetas_comidas:
-        e.pack()
-        self.raiz.mainloop()
+      
+      self.raiz.mainloop()
 
     
     def ciclo_vida_filosofo(self,filosofo,etiqueta_comidas):
