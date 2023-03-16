@@ -198,10 +198,14 @@ Cada filósofo tiene su propia etiqueta que muestra su estado, si están pensand
 
 
 Los resultados al ejecutar el código son los siguientes:
-<img width="921" alt="filo2" src="https://user-images.githubusercontent.com/91721643/225739484-7ba56ebd-6b9e-41b0-b0a7-245e016351a4.png">
 
 
-<img width="943" alt="filo3" src="https://user-images.githubusercontent.com/91721643/225739508-7123bb64-f9b9-43e0-8383-2532c9674f14.png">
+<img width="935" alt="filo5" src="https://user-images.githubusercontent.com/91721643/225740446-f6a2f37d-a1fa-410f-b952-bad3f9ec327a.png">
+
+
+
+<img width="908" alt="filo4" src="https://user-images.githubusercontent.com/91721643/225740507-f0a88eb0-f93e-4bf5-9888-51fd278cbca0.png">
+
 
 
 
